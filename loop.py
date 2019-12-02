@@ -152,10 +152,10 @@ def loop_highest_loop_unrolling(n):
 
 
 start = timeit.default_timer()
-n=500
+n=1
 loop_highest(n)
 
-wtr = csv.writer(open ('new_stocks/new_stocks_'+str(n) + '.csv', 'w'), delimiter=',', lineterminator='\n')
+wtr = csv.writer(open ('new_stocks/new_stocks_vm_'+str(n) + '.csv', 'w'), delimiter=',', lineterminator='\n')
 for x in new_stocks : wtr.writerow ([x])
 #print(new_stocks)
 #loop_highest_loop_unrolling(500)
